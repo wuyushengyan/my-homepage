@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>张三 | 个人主页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 50px 40px 40px;
+            max-width: 480px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+        }
+
+        .avatar {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #e8ecf1;
+            margin-bottom: 24px;
+        }
+
+        .name {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1a1a2e;
+            margin-bottom: 8px;
+        }
+
+        .tagline {
+            font-size: 16px;
+            color: #6b7280;
+            margin-bottom: 28px;
+            line-height: 1.5;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 32px;
+        }
+
+        .skill-tag {
+            background: #eef2ff;
+            color: #4f46e5;
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+
+        .skill-tag:hover {
+            background: #dde3ff;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            border-top: 1px solid #f0f0f0;
+            padding-top: 28px;
+        }
+
+        .social-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            background: #f8f9fc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.25s;
+            text-decoration: none;
+            color: #555;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .social-icon:hover {
+            background: #4f46e5;
+            color: white;
+            transform: scale(1.08);
+        }
+
+        .footer-text {
+            margin-top: 24px;
+            font-size: 12px;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <!-- 头像：把 src 的链接换成你自己的头像图片地址 -->
+        <img class="avatar" src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix" alt="头像">
+
+        <!-- 名字 -->
+        <div class="name">张三</div>
+
+        <!-- 一句话介绍 -->
+        <div class="tagline">
+            热爱技术与设计的产品经理。<br>相信简单的力量，正在创造让生活更美好的产品。
+        </div>
+
+        <!-- 技能列表 -->
+        <div class="skills">
+            <span class="skill-tag">产品策略</span>
+            <span class="skill-tag">用户研究</span>
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">数据分析</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">写作</span>
+        </div>
+
+        <!-- 社交链接 -->
+        <div class="social-links">
+            <a href="https://github.com" class="social-icon" target="_blank" title="GitHub">GH</a>
+            <a href="https://twitter.com" class="social-icon" target="_blank" title="Twitter">TW</a>
+            <a href="mailto:hello@example.com" class="social-icon" title="邮箱">@</a>
+            <a href="#" class="social-icon" title="公众号">WX</a>
+        </div>
+
+        <div class="footer-text">© 2024 张三 · 保持简单</div>
+    </div>
+</body>
+</html>
